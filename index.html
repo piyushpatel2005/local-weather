@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Check your local weather</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			<div class="text-center">
+				<h1>Weather API Project</h1>
+				<p class="lead text-underline">Check your local weather from here using this API</p>
+				<div class="row">
+					<div class="col-sm-12">
+						<h4 class="text-center" id="location">
+						</h4>
+					</div>
+					<div class="col-sm-12">
+						<h3><span class="temperature"></span> &#8451;
+						</h3>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="btn-group">
+						<button class="btn btn-lg btn-success" id="centigrade">&#8451;</button>
+						<button class="btn btn-lg btn-primary" id="fahrenheit">&#8457;</button>
+					</div>
+				</div>
+			</div>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Weather Summary:</h1>
+						<p class="detailed-weather-report text-left">The temperature at your location is around <span class="temperature"></span> &#8451;. The humidity is <span class="humidity"></span>%. </p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<footer class="text-center">
+				<p>Developed by <a href="https://github.com/piyushpatel2005" class="btn-danger btn-md btn" target="_blank">Piyush Patel</a></p>
+			</footer>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="js/jquery-3.1.1.min.js"></script>
+    	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/bootstrap.min.js"></script>
+	    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		<script src="js/myScript.js"></script>
+		<body>
+</html>
