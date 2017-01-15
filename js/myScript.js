@@ -23,7 +23,7 @@ function getLocationInfo(weatherString) {
 }
 
 function getUserWeatherInfo () {
-  $.getJSON("https://geoip-db.com/json/geoip.php?json=?", function (data) {
+  $.getJSON("https://geoip-db.com/json", function (data) {
     userLat = data['latitude'];
     userLon = data['longitude'];
     weatherString = "http://api.openweathermap.org/data/2.5/weather?lat=" + userLat + "&lon=" + userLon + "&units=metric&appid=a5f68db00bb4fd42eeb47978b6b1d5c3";
